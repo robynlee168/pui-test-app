@@ -1,0 +1,234 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #F3EDE3;
+}
+
+/* navigation bar + logo styling */
+.navbar {
+    margin: 30px 4.5% 85px 1.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    float: left;
+    
+}
+
+.logo img {
+    width: 400px;
+}
+
+.navlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    display: block;
+    margin: 0px 0px 0px 50px;
+    font-family: Avenir;
+    color: #52413A;
+    font-size: 22px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* hero section styling */
+h1 {
+    color: #6B5348;
+    font-family: "Songti SC";
+    font-weight: 800;
+    font-size: 53px;
+}
+
+.banner-text p {
+    color: #6B5348;
+    font-family: Avenir;
+    font-weight: 200;
+    font-size: 22px;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    width: 500px;
+}
+
+.button {
+    background-color: #E94747;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 27px;
+    font-family: Avenir;
+}
+
+.hero-section {
+    margin: 0px 80px 120px 100px;
+}
+
+.hero-section img {
+    width: 650px;
+    height: 385px;
+    float: right;
+    margin-left: 45px;
+}
+
+.banner-text {
+    margin-right: 200px;
+}
+
+/* gallery section styling */
+h2 {
+    color: #6B5348;
+    font-family: "Snell Roundhand";
+    font-weight: 720;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 18%;
+    margin: 15px 15px 15px 15px;
+}
+
+.shop-title {
+    margin-left: 80px;
+}
+
+/* shop page title styling */
+.full-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+/* menu items styling */
+.menu-item {
+    margin: 20px 40px 70px 40px;
+}
+
+.menu-item img {
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+.captions .cost {
+    float: right;
+}
+
+.captions .item {
+    color: #6B5348;
+    font-family: Avenir;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.captions .cost {
+    color: #E94747;
+    font-family: Avenir;
+    font-weight: 450;
+    font-size: 27px;
+}
+
+#on-page {
+    color: #E94747;
+}
+
+/* product details page styling */
+.back-to-ordering {
+    margin-left: 120px;
+}
+
+
+.back-carat {
+    color: #E94747;
+    margin-right: 10px;
+}
+
+.back {
+    color: #E94747;
+    font-family: Avenir;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.product-details {
+    margin-right: 120px;
+}
+
+.product-details img {
+    width: 30%;
+    float: left;
+    margin: 18px 70px 0px 120px;
+}
+
+.product-texts .product-title {
+    color: #6B5348;
+    font-family: "Songti SC";
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.product-texts .product-cost {
+    color: #E94747;
+    font-family: "Songti SC";
+    font-weight: 800;
+    font-size: 45px;
+    float: right;
+    margin-right: 15px;
+}
+
+.product-texts p {
+    color: #6B5348;
+    font-family: Avenir;
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.product-texts .adjust-order {
+    margin:45px 0px 45px 0px;
+}
+
+.select {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 35px 0px 50px 0px;
+}
+
+.dropdown {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 22px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #6B5348;
+    border-radius: 5px;
+    padding: 3px 130px 3px 15px;
+    margin-left: 10px;
+}
+
+.adjust-order i {
+    color: #6B5348;
+    position: relative;
+    top: 0px; right: 30px;
+}
+  

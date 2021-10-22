@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- Cart Page for Bun Bun Bake Shop-->
+
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="bakeshop-logo.png" alt="Logo">
+        </div>
+        <ul class="navlinks">
+            <li><a href="./shop.html">Shop</a></li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li id="on-page"><i class="fa fa-shopping-cart"></i></li> 
+        </ul>
+    </div>
+
+    <h1 class="page-title">Your Cart (1)</h1>
+
+    <hr>
+
+    <div class="cart">
+        <img src="menu-item.png" alt="original cinnamon roll">
+        <div class="cart-summary">
+            <span class="cart-product">Original Cinnamon Rolls</span>
+            <span class="cart-cost">$3.50</span>
+            <p class="cart-glaze">w/ sugar-milk glaze</p>
+
+            <!-- adjust quantity -->
+            <div class="adjust-order">
+                <span class="select">Quantity:</span>
+                <span class="dropdown">1 roll</span>
+                <span><i class="fa fa-caret-down"></i></span>
+                <p><u>remove</u></p>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="total-cost">
+        <span class="cart-product">Total:</span>
+        <span class="cart-cost">$3.50</span>
+        <!-- checkout button -->
+        <button class="button" type="button">Checkout</button>
+    </div>
+
+</body>
+</html>

@@ -42,6 +42,15 @@ li a {
     text-decoration: none;
 }
 
+a:visited {
+    text-decoration: none;
+    color: #52413A;
+}
+
+a:active {
+    color: #E94747;
+}
+
 /* hero section styling */
 h1 {
     color: #6B5348;
@@ -152,7 +161,7 @@ h2 {
 }
 
 /* product details page styling */
-.back-to-ordering {
+.click-back {
     margin-left: 120px;
 }
 
@@ -206,7 +215,7 @@ h2 {
     margin:45px 0px 45px 0px;
 }
 
-.select {
+.product-details .select {
     color: #6B5348;
     font-family: Avenir;
     font-size: 25px;
@@ -231,4 +240,95 @@ h2 {
     position: relative;
     top: 0px; right: 30px;
 }
+
+.adjust-order p {
+    float: right;
+    color: #6B5348;
+    font-family: Avenir;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* Cart page styling */
+
+.page-title {
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 88%;
+    border: 1px solid #6B5348;
+    opacity: 0.3;
+}
+
+.cart {
+    margin: 30px 80px 0px 85px;
+}
+
+.cart img {
+    float: left;
+    width: 130px;
+    margin-right: 2%;
+    margin-bottom: 30px;
+}
+
+.cart-product {
+    font-size: 30px;
+    color: #6B5348;
+    font-family: "Songti SC";
+    font-weight: 800;
+}
+
+.cart-cost {
+    color: #E94747;
+    font-family: "Songti SC";
+    font-weight: 800;
+    font-size: 30px;
+    float: right;
+    /*margin-right: 15px;*/
+}
+
+.cart-glaze {
+    color: #6B5348;
+    font-family: Avenir;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: -2px;
+}
+
+.cart-summary .adjust-order {
+    margin-top: 23px;
+}
   
+.cart-summary .select {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 18px; 
+    font-weight:200;
+}
+
+.cart-summary .dropdown {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #6B5348;
+    border-radius: 5px;
+    padding: 3px 130px 3px 15px;
+    margin-left: 10px;
+}
+
+.total-cost .cart-product {
+    margin-left: 84%;
+}
+
+.total-cost {
+    margin: 28px 80px 0px 0px;
+}
+
+.total-cost .button {
+    margin-top: 28px;
+    float: right;
+}

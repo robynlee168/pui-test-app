@@ -28,6 +28,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 li {
@@ -49,6 +50,28 @@ a:visited {
 
 a:active {
     color: #E94747;
+}
+
+.navlinks .fa-shopping-cart {
+    font-size: 37px;
+}
+
+.circle {
+    height: 21px;
+    width: 21px; 
+    background-color:#E94747;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -8px;
+    margin-top: 6px;
+}
+
+.cart-num {
+    color: white;
+    font-size: 15px;
+    font-family: Avenir;
+    font-weight: 200;
+    text-align: center;
 }
 
 /* hero section styling */
@@ -249,6 +272,43 @@ h2 {
     font-size: 18px;
 }
 
+
+.add-item label {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 35px 10px 50px 0px;
+}
+
+select {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 22px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #6B5348;
+    border-radius: 5px;
+    padding: 3px 100px 3px 15px;
+} 
+
+#glaze-select {
+    padding: 3px 20px 3px 15px;
+}
+
+.quantity-dropdown {
+    margin-top: 40px;
+}
+
+.glaze-dropdown {
+    margin-top: 25px;
+    margin-bottom: 48px;
+}
+
+.add-item input:hover {
+    cursor: pointer;
+}
+
 /* Cart page styling */
 
 .page-title {
@@ -297,9 +357,16 @@ hr {
     margin-top: -2px;
 }
 
+.quantity-dropdown2 label {
+    color: #6B5348;
+    font-family: Avenir;
+    font-size: 18px; 
+    font-weight:200;
+}
+
 .cart-summary .adjust-order {
     margin-top: 23px;
-}
+} 
   
 .cart-summary .select {
     color: #6B5348;
@@ -318,7 +385,7 @@ hr {
     border-radius: 5px;
     padding: 3px 130px 3px 15px;
     margin-left: 10px;
-}
+} 
 
 .total-cost .cart-product {
     margin-left: 84%;
@@ -332,3 +399,6 @@ hr {
     margin-top: 28px;
     float: right;
 }
+
+
+

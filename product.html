@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- icons -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- javascript -->
+    <script src="bunbunbakeshop.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,9 @@
             <li>About Us</li>
             <li>Contact</li>
             <li><a href="./cart.html"><i class="fa fa-shopping-cart"></i></a></li> 
+                <div class="circle">
+                    <div class="cart-num">0</div>
+                </div>
         </ul>
     </div>
 
@@ -42,22 +47,51 @@
             <!-- description -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <!-- adjust quantity -->
-            <div class="adjust-order">
+            <!-- two dropdowns, one submit button -->
+            <form class="add-item" onsubmit="submitCount(); return false;">
+                <!-- adjust quantity -->
+                <div class="quantity-dropdown">
+                    <label for="quantity-select">Quantity:</label>
+
+                    <select name="quantity" id="quantity-select" onchange="calculateCost()">
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                </div>
+
+                <!-- adjust glaze -->
+                <div class="glaze-dropdown">
+                    <label for="glaze-select">Select glaze:</label>
+
+                    <select name="glaze" id="glaze-select">
+                        <option value="">None</option>
+                        <option value="sugar-milk">sugar-milk</option>
+                        <option value="vanilla-milk">vanilla-milk</option>
+                        <option value="double-chocolate">double-chocolate</option>
+                    </select>
+                </div>
+
+                <input class="button" type="submit" value="Add to Cart">
+            </form>
+
+            <!-- <div class="adjust-order">
                 <span class="select">Quantity:</span>
                 <span class="dropdown">1 roll</span>
                 <span><i class="fa fa-caret-down"></i></span>
-            </div>
+            </div> -->
 
-            <!-- adjust glaze -->
-            <div class="adjust-order">
+        
+        
+
+            <!-- <div class="adjust-order">
                 <span class="select">Select Glaze:</span>
                 <span class="dropdown">None</span>
                 <span><i class="fa fa-caret-down"></i></span>
-            </div>
+            </div> -->
 
             <!-- add to cart -->
-            <button class="button" type="button">Add to Cart</button>
         </div>
     </div>
 

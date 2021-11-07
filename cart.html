@@ -14,7 +14,7 @@
     <script src="bunbunbakeshop.js"></script>
 </head>
 
-<body>
+<body onload= "updateCart(); getFromLocalStorage()">
     <!-- navigation bar -->
     <div class="navbar">
         <div class="logo">
@@ -31,19 +31,19 @@
         </ul>
     </div>
 
-    <h1 class="page-title">Your Cart (1)</h1>
+    <h1 class="page-title">Your Cart</h1>
 
     <hr>
     <!--cart summary section-->
     <div class="cart">
-        <img src="menu-item.png" alt="original cinnamon roll">
         <div class="cart-summary">
+            <!-- <img src="menu-item.png" alt="original cinnamon roll">
             <span class="cart-product">Original Cinnamon Rolls</span>
             <span class="cart-cost">$3.50</span>
-            <p class="cart-glaze">w/ sugar-milk glaze</p>
+            <p class="cart-glaze">w/ sugar-milk glaze</p> -->
 
             <!-- adjust quantity -->
-            <div class="quantity-dropdown2">
+            <!-- <div class="quantity-dropdown2">
                 <label for="quantity-select">Quantity:</label>
 
                 <select name="quantity" id="quantity-select">
@@ -51,8 +51,8 @@
                     <option value="3">3 rolls</option>
                     <option value="6">6 rolls</option>
                     <option value="12">12 rolls</option>
-                </select>
-            </div>
+                </select> -->
+            <!-- </div> -->
 
             <!-- <div class="adjust-order">
                 <span class="select">Quantity:</span>
@@ -62,11 +62,12 @@
             </div> -->
         </div>
     </div>
+
     <hr>
     <!-- total cost of cart -->
     <div class="total-cost">
         <span class="cart-product">Total:</span>
-        <span class="cart-cost">$3.50</span>
+        <span id="cart-total" class="cart-cost">0</span>
         <!-- checkout button -->
         <button class="button" type="button">Checkout</button>
     </div>

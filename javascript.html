@@ -1,0 +1,40 @@
+//for updating cost of product depending on number of rolls selected
+function calculateCost() {
+    var quantity = document.getElementById("quantity-select");
+    console.log(quantity);
+    var selectedValue = quantity.options[quantity.selectedIndex].value;
+    var cost = selectedValue * 3.5;
+    var productCost = document.getElementsByClassName("product-cost");
+    console.log(productCost[0]);
+    productCost[0].innerHTML = "$" + cost.toFixed(2);
+}
+
+
+//visual indication of number of items in cart 
+var count = 0;
+var quantitiesAddedToCart = [];
+var glazesAddedToCart = [];
+var costsAddedToCart = [];
+
+function submitCount() {
+    count = count + 1;
+    var cartNum= document.getElementsByClassName("cart-num");
+    cartNum[0].innerHTML = count;
+    var quantity = document.getElementById("quantity-select");
+    var selectedValue = quantity.options[quantity.selectedIndex].value;
+    var cost = selectedValue * 3.5;
+    quantitiesAddedToCart.push(selectedValue);
+    var glaze = document.getElementById("glaze-select");
+    var selectedGlaze = glaze.options[glaze.selectedIndex].value;
+    glazesAddedToCart.push(selectedGlaze);
+    costsAddedToCart.push(cost);
+}
+
+function addToLocalStorage() {
+    for (let i = 0; i < quantitiesAddedToCart.length; i++) {
+        localStorage.setItem("quantity"+i, quantitiesAddedToCart[i]);
+        localStorage.setItem("glaze"+i, glazesAddedToCart[i]);
+        localStorage.setItem("cost"+i, costsAddedToCart[i]);
+    }
+}
+

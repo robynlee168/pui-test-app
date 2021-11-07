@@ -400,5 +400,12 @@ hr {
     float: right;
 }
 
+.fa-trash-alt {
+    font-size: 23px;
+    float: right;
+    display: block;
+    color: #6B5348;
+}
+
 
 

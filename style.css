@@ -322,6 +322,11 @@ hr {
     opacity: 0.3;
 }
 
+.cart-summary hr {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 .cart {
     margin: 30px 80px 0px 85px;
 }
@@ -392,19 +397,26 @@ hr {
 }
 
 .total-cost {
-    margin: 28px 80px 0px 0px;
+    margin: 0px 80px 0px 0px;
 }
 
 .total-cost .button {
     margin-top: 28px;
+    margin-bottom: 28px;
     float: right;
 }
 
-.fa-trash-alt {
-    font-size: 23px;
-    float: right;
-    display: block;
+.cart-quantity {
     color: #6B5348;
+    font-family: Avenir;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.fa-trash-alt {
+    float: right;
+    color: #6B5348;
+    cursor: pointer;
 }
 
 
